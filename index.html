@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Nembak Kamu 😳</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container" id="start-page">
+    <h1>Masukin nama kamu dulu dong~ 😳</h1>
+    <input type="text" id="girlName" placeholder="Nama kamu..." />
+    <button onclick="startConfession()">Mulai</button>
+  </div>
+
+  <div class="container hidden" id="confess-page">
+    <h2 id="confessText"></h2>
+    <div class="buttons">
+      <button onclick="acceptLove()">Iyaaa 😍</button>
+      <button id="noButton" onmouseover="moveButton()">Nggak 😤</button>
+    </div>
+  </div>
+
+  <audio id="bgMusic" loop>
+    <source src="music.mp3" type="audio/mpeg">
+  </audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
